@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app-container">
+        <div id="todos-header-container">
+            <h1>Todo List</h1>
+            <div id="todos-input-container">
+                <input type="text" placeholder="Add your new todo" id="todo-input">
+                <input type="button" id="add-todo-btn" value="+" onclick="addTodo()" disabled>
+            </div>
+        </div>
+        <div id="todos-list-container">
+            <ul id="todos-list">
+            </ul>
+        </div>
+        <div id="todos-footer-container">
+            <span id="pending-tasks-msg">
+            </span>
+            <button id="clear-todos-btn" onclick="clearAllTodos()">
+                Clear All
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
